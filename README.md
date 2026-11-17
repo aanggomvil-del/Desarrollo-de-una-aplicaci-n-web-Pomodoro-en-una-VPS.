@@ -1,1 +1,1 @@
-# Desarrollo-de-una-aplicaci-n-web-Pomodoro-en-una-VPS.
+# Desarrollo-de-una-aplicación-web-Pomodoro-en-una-VPS.
