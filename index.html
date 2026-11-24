@@ -1,38 +1,172 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera página HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web Pomodoro - Proyecto ASIR</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #d94b45;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 10px;
+            border-left: 5px solid #d94b45;
+        }
+
+        h2 {
+            color: #d94b45;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        a {
+            color: #d94b45;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Hola, mundo</h1>
-    <p>Este es un ejemplo básico de estructura HTML.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Elementos comunes</h2>
-      <ul>
-        <li>Encabezados y párrafos</li>
-        <li>Listas ordenadas o desordenadas</li>
-        <li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">Enlace a MDN Web Docs</a></li>
-      </ul>
-    </section>
+    <header>
+        <h1>Aplicación Web Pomodoro</h1>
+        <p>Proyecto de fin de ciclo - ASIR</p>
+    </header>
 
-    <section>
-      <h2>Contacto</h2>
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+    <main>
 
-  <footer>
-    <p>&copy; 2026 Ejemplo HTML</p>
-  </footer>
+        <section>
+            <h2>Descripción del proyecto</h2>
+            <p>
+                El proyecto consiste en desarrollar una aplicación web
+                basada en la técnica Pomodoro para ayudar a los usuarios
+                a organizar su tiempo, mejorar su concentración y
+                alternar periodos de trabajo y descanso.
+            </p>
+        </section>
+
+        <section>
+            <h2>Necesidad o problema que resuelve</h2>
+            <p>
+                La aplicación pretende facilitar la gestión del tiempo
+                y ayudar a las personas que tienen dificultades para
+                organizar sus tareas, mantener la concentración y
+                controlar sus periodos de descanso.
+            </p>
+        </section>
+
+        <section>
+            <h2>Objetivos principales</h2>
+            <ul>
+                <li>Desarrollar una aplicación web funcional de gestión del tiempo.</li>
+                <li>Permitir el registro y acceso de usuarios.</li>
+                <li>Implementar un temporizador basado en la técnica Pomodoro.</li>
+                <li>Almacenar las sesiones de trabajo de cada usuario.</li>
+                <li>Desplegar la aplicación en un servidor VPS real accesible desde Internet.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Funcionalidades previstas</h2>
+            <ul>
+                <li>Registro e inicio de sesión de usuarios.</li>
+                <li>Temporizador para sesiones de trabajo y descanso.</li>
+                <li>Registro de las sesiones realizadas.</li>
+                <li>Almacenamiento de los datos de los usuarios.</li>
+                <li>Consulta del historial de sesiones.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tecnologías que se utilizarán</h2>
+            <ul>
+                <li>Ubuntu Server: sistema operativo del servidor VPS.</li>
+                <li>VPS: alojamiento de la aplicación en Internet.</li>
+                <li>HTML, CSS y JavaScript: desarrollo de la interfaz web.</li>
+                <li>[Lenguaje o framework del lado del servidor].</li>
+                <li>[Sistema gestor de base de datos elegido].</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Estado actual del proyecto</h2>
+            <p>
+                Actualmente, el proyecto se encuentra en la fase de
+                planificación y organización. Se están definiendo las
+                tareas, preparando la documentación y diseñando la
+                arquitectura de la aplicación antes de comenzar su desarrollo.
+            </p>
+        </section>
+
+        <section>
+            <h2>Repositorio de GitHub</h2>
+            <p>
+                <a href="URL_DE_TU_REPOSITORIO" target="_blank">
+                    Acceder al repositorio del proyecto
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Tablero de Jira</h2>
+            <p>
+                <a href="URL_DE_TU_TABLERO_JIRA" target="_blank">
+                    Acceder a la planificación del proyecto
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto ASIR - Aplicación Web Pomodoro</p>
+    </footer>
+
 </body>
 </html>
