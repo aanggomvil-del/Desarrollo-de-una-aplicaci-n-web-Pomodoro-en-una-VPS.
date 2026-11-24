@@ -4,114 +4,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación Web Pomodoro - Proyecto ASIR</title>
+    <title>Proyecto ASIR | Pomodoro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <h1>Aplicación Web Pomodoro</h1>
-        <p>Proyecto de fin de ciclo - ASIR</p>
+        <nav class="navbar">
+            <a href="#" class="logo">🍅 POMODORO ASIR</a>
+            <div class="nav-links">
+                <a href="#proyecto">Proyecto</a>
+                <a href="#funciones">Funcionalidades</a>
+                <a href="#tecnologias">Tecnologías</a>
+                <a href="#estado">Estado</a>
+            </div>
+        </nav>
     </header>
 
     <main>
 
-        <section>
-            <h2>Descripción del proyecto</h2>
-            <p>
-                El proyecto consiste en desarrollar una aplicación web
-                basada en la técnica Pomodoro para ayudar a los usuarios
-                a organizar su tiempo, mejorar su concentración y
-                alternar periodos de trabajo y descanso.
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">PROYECTO FINAL ASIR</span>
+                <h1>Organiza tu tiempo.<br>
+                    <span>Mejora tu productividad.</span>
+                </h1>
+                <p>
+                    Una aplicación web basada en la técnica Pomodoro
+                    que permite organizar sesiones de trabajo y descanso,
+                    gestionar el tiempo y mejorar la concentración.
+                </p>
+                <a href="#proyecto" class="btn">Conocer el proyecto</a>
+            </div>
+
+            <div class="timer-card">
+                <div class="tomato">🍅</div>
+                <p class="timer-label">TIEMPO DE TRABAJO</p>
+                <div class="timer">25:00</div>
+                <p class="timer-description">Concéntrate en tu objetivo</p>
+                <div class="timer-line"></div>
+                <p class="timer-footer">TRABAJA · DESCANSA · REPITE</p>
+            </div>
+        </section>
+
+        <section id="proyecto" class="section">
+            <span class="tag">01 / EL PROYECTO</span>
+            <h2>¿En qué consiste?</h2>
+            <p class="section-description">
+                Este proyecto consiste en desarrollar una aplicación web
+                de gestión del tiempo mediante la técnica Pomodoro.
+                Su finalidad es ayudar a los usuarios a organizar sus
+                tareas mediante intervalos de trabajo y descanso.
             </p>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>🎯 Objetivo</h3>
+                    <p>
+                        Facilitar la organización del tiempo y mejorar
+                        la concentración durante las actividades diarias.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>💡 Necesidad</h3>
+                    <p>
+                        Ofrecer una herramienta sencilla para gestionar
+                        sesiones de trabajo, controlar descansos y
+                        consultar el tiempo dedicado a cada sesión.
+                    </p>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h2>Necesidad o problema que resuelve</h2>
-            <p>
-                La aplicación pretende facilitar la gestión del tiempo
-                y ayudar a las personas que tienen dificultades para
-                organizar sus tareas, mantener la concentración y
-                controlar sus periodos de descanso.
+        <section id="funciones" class="section features-section">
+            <span class="tag">02 / FUNCIONALIDADES</span>
+            <h2>¿Qué permitirá hacer?</h2>
+
+            <div class="features-grid">
+                <article class="feature">
+                    <div class="feature-icon">👤</div>
+                    <h3>Registro e inicio de sesión</h3>
+                    <p>Crear una cuenta e iniciar sesión de forma segura.</p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Temporizador Pomodoro</h3>
+                    <p>Controlar los intervalos de trabajo y descanso.</p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Historial de sesiones</h3>
+                    <p>Guardar y consultar las sesiones y el tiempo trabajado.</p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Gestión de usuarios</h3>
+                    <p>Almacenar los datos y las sesiones de cada usuario.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section">
+            <span class="tag">03 / TECNOLOGÍAS</span>
+            <h2>Herramientas utilizadas</h2>
+            <p class="section-description">
+                Para desarrollar y desplegar la aplicación se utilizarán
+                las siguientes tecnologías:
             </p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <strong>HTML / CSS</strong>
+                    <span>Estructura y diseño</span>
+                </div>
+                <div class="tech-card">
+                    <strong>JavaScript</strong>
+                    <span>Interactividad</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Python</strong>
+                    <span>Lenguaje de programación</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Flask</strong>
+                    <span>Framework web</span>
+                </div>
+                <div class="tech-card">
+                    <strong>SQL</strong>
+                    <span>Gestión de la base de datos</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Bash</strong>
+                    <span>Automatización de tareas del servidor</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Ubuntu Server</strong>
+                    <span>Sistema operativo de la VPS</span>
+                </div>
+                <div class="tech-card">
+                    <strong>MariaDB</strong>
+                    <span>Sistema gestor de bases de datos</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Nginx</strong>
+                    <span>Servidor web y proxy inverso</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Gunicorn</strong>
+                    <span>Ejecución de la aplicación Flask</span>
+                </div>
+                <div class="tech-card">
+                    <strong>SSH</strong>
+                    <span>Administración remota del servidor</span>
+                </div>
+                <div class="tech-card">
+                    <strong>UFW</strong>
+                    <span>Configuración del cortafuegos</span>
+                </div>
+                <div class="tech-card">
+                    <strong>HTTPS y TLS</strong>
+                    <span>Protección de las comunicaciones</span>
+                </div>
+                <div class="tech-card">
+                    <strong>Git</strong>
+                    <span>Control de versiones</span>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Objetivos principales</h2>
-            <ul>
-                <li>Desarrollar una aplicación web funcional de gestión del tiempo.</li>
-                <li>Permitir el registro y acceso de usuarios.</li>
-                <li>Implementar un temporizador basado en la técnica Pomodoro.</li>
-                <li>Almacenar las sesiones de trabajo de cada usuario.</li>
-                <li>Desplegar la aplicación en un servidor VPS real accesible desde Internet.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Funcionalidades previstas</h2>
-            <ul>
-                <li>Registro e inicio de sesión de usuarios.</li>
-                <li>Temporizador para sesiones de trabajo y descanso.</li>
-                <li>Registro de las sesiones realizadas.</li>
-                <li>Almacenamiento de los datos de los usuarios.</li>
-                <li>Consulta del historial de sesiones.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Tecnologías que se utilizarán</h2>
-            <ul>
-                <li>HTML: estructura de las páginas web.</li>
-                <li>CSS: diseño de la interfaz.</li>
-                <li>JavaScript: temporizador e interactividad.</li>
-                <li>Python: lógica de la aplicación.</li>
-                <li>Flask: framework para desarrollar la aplicación web.</li>
-                <li>SQL: gestión de los datos de la base de datos.</li>
-                <li>Bash: automatización de tareas del servidor.</li>
-                <li>Ubuntu Server: sistema operativo de la VPS.</li>
-                <li>MariaDB: sistema gestor de bases de datos.</li>
-                <li>Nginx: servidor web y proxy inverso.</li>
-                <li>Gunicorn: ejecución de la aplicación Flask.</li>
-                <li>SSH: administración remota del servidor.</li>
-                <li>UFW: configuración del cortafuegos.</li>
-                <li>HTTPS y TLS: protección de las comunicaciones.</li>
-                <li>Git: control de versiones.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Estado actual del proyecto</h2>
+        <section id="estado" class="section status-section">
+            <span class="tag">04 / ESTADO DEL PROYECTO</span>
+            <h2>En fase de planificación</h2>
             <p>
-                Actualmente, el proyecto se encuentra en la fase de
-                planificación y organización. Se están definiendo las
-                tareas, preparando la documentación y diseñando la
-                arquitectura de la aplicación antes de comenzar su desarrollo.
+                Actualmente el proyecto se encuentra en la fase de
+                planificación y diseño. Se están organizando las tareas,
+                preparando la documentación y definiendo la arquitectura
+                de la aplicación antes de comenzar su implementación.
             </p>
+            <span class="status-badge">● En desarrollo del anteproyecto</span>
         </section>
 
-        <section>
-            <h2>Repositorio de GitHub</h2>
-            <p>
-                <a href="https://github.com/aanggomvil-del/Desarrollo-de-una-aplicaci-n-web-Pomodoro-en-una-VPS./tree/main" target="_blank">
-                    Acceder al repositorio del proyecto
+        <section class="links-section">
+            <h2>Conoce más sobre el proyecto</h2>
+            <p>Accede al repositorio y consulta la planificación del trabajo.</p>
+
+            <div class="link-buttons">
+                <a href="https://github.com/aanggomvil-del/Desarrollo-de-una-aplicaci-n-web-Pomodoro-en-una-VPS./tree/main"
+                   target="_blank" class="btn">
+                    Repositorio GitHub
                 </a>
-            </p>
-        </section>
 
-        <section>
-            <h2>Tablero de Jira</h2>
-            <p>
-                <a href="https://iestriana-team-htu9wsyr.atlassian.net/jira/software/projects/KAN/boards/1?filter=&groupBy=none" target="_blank">
-                    Acceder a la planificación del proyecto
+                <a href="https://iestriana-team-htu9wsyr.atlassian.net/jira/software/projects/KAN/boards/1?filter=&groupBy=none"
+                   target="_blank" class="btn btn-outline">
+                    Tablero Jira
                 </a>
-            </p>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Proyecto ASIR - Aplicación Web Pomodoro</p>
+        <p>Proyecto ASIR – Aplicación Web Pomodoro</p>
+        <p>Desarrollado como proyecto de Administración de Sistemas Informáticos en Red.</p>
     </footer>
 
 </body>
